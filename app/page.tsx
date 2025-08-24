@@ -3,6 +3,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Download, Github, Zap, Workflow, Terminal, Users, Cpu, GitBranch } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
@@ -11,9 +12,7 @@ export default function HomePage() {
       <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-              <Workflow className="w-5 h-5 text-primary-foreground" />
-            </div>
+            <Image src="/icon_256.png" alt="BrowserSwitch" width={32} height={32} />
             <span className="font-heading font-black text-xl text-foreground">BrowserSwitch</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
@@ -238,9 +237,7 @@ export default function HomePage() {
         <div className="container mx-auto max-w-4xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-primary rounded-sm flex items-center justify-center">
-                <Workflow className="w-4 h-4 text-primary-foreground" />
-              </div>
+              <Image src="/icon_256.png" alt="BrowserSwitch" width={32} height={32} />
               <span className="font-heading font-bold text-foreground">BrowserSwitch</span>
             </div>
             <div className="flex items-center gap-6">
@@ -258,6 +255,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
             <p>© 2025 BrowserSwitch. Open source software released under MIT License.</p>
+            <p>Website made with the help of v0.dev</p>
           </div>
         </div>
       </footer>
